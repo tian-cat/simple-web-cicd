@@ -3,7 +3,7 @@
 """
 from flask import Flask, render_template_string
 
-app = Flask(__name__)
+app = Flask(__name__x)
 
 HTML = """<!DOCTYPE html>
 <html lang="zh-CN">
@@ -35,6 +35,7 @@ HTML = """<!DOCTYPE html>
 <body>
     <div class="card">
         <h1>🚀 CI/CD 部署成功！</h1>
+        <p style="color: #555; font-size: 16px; margin-bottom: 10px;">学生姓名：刘俊希 | 学号：2440664316</p>
         <p class="version">Flask App v1.0 | Python {{ python_version }}</p>
         <div class="status">✅ 服务运行正常</div>
         <div class="info">
@@ -66,3 +67,5 @@ def health():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080, debug=True)
+
+    //2440664316 刘俊希
